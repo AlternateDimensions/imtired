@@ -13,4 +13,8 @@ public class Tiger extends Feline {
     public void swim(){
         System.out.println("The tiger swims.");
     }
+
+    public void say(){
+        super.roar();
+    }
 }

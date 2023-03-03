@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /*
  * Activity 4.9.2
  */
@@ -5,6 +7,8 @@ public class ZooKeeperRunner
 {
   public static void main(String[] args)
   { 
+    ArrayList<Animal> zoo = new ArrayList<Animal>();
+
     Elephant elephant = new Elephant("leaves, grasses, roots", false, 60.0);
     elephant.trumpet();
 
@@ -25,5 +29,7 @@ public class ZooKeeperRunner
     owl.hunt();
     Owl owl2 = new Owl("mice,insects", true, 4.0);
     owl2.eat();
+
+    System.out.println(zoo);
   }
 }
